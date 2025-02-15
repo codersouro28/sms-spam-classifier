@@ -6,6 +6,7 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 import os
 
+os.system("bash setup.sh")
 ps = PorterStemmer()
 
 def transform_text(text):
