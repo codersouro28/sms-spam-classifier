@@ -1,3 +1,4 @@
 streamlit
+nltk
 nltk[all]
 scikit-learn
