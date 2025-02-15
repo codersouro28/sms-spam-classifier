@@ -32,9 +32,14 @@ def transform_text(text):
 
     return " ".join(y)
 
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Correct file path usage
-vectorizer_path = os.path.join(os.getcwd(), "vectorizer.pkl")
-model_path = os.path.join(os.getcwd(), "model.pkl")
+vectorizer_path = os.path.join(base_dir, "vectorizer.pkl")
+model_path = os.path.join(base_dir, "model.pkl")
+# Get the directory of the current script
+
 
 # Check if files exist
 if not os.path.exists(vectorizer_path):
